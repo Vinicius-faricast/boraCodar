@@ -11,3 +11,5 @@ Repositório criado para armazenar exercicios feitos nos desafios #boraCodar da 
 ## Lista de desafios
 
 ### [desafio 01 - player de música](./01/)
+
+### [desafio 02 - product card](./02/)
