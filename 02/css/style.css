@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,600;1,600&family=Lato:wght@300;400&display=swap');
+
+:root{
+    --bg-color: #D9CDF7;
+    --primary-color: #271A45;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    background-color: var(--bg-color);
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.product-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.product{
+    position: relative;
+}
+
+.image{
+    width: 450px;
+}
+
+.animation{
+    display: none;
+}
+
+.btn{
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+
+.animated{
+    display: inline;
+}
+
+.closed{
+    display: none;
+}
+
+.infos{
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: start;
+}
+
+.infos p{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.infos h1{
+    font-size: 32;
+    font-family: "Crimson Pro", serif;
+    font-weight: 600;
+}
+
+.infos h2{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: .60;
+}
+
+.infos button{
+    font-size: 12px;
+    padding: 8px 16px;
+    border-style: none;
+    border-radius: 999px;
+    border: 1px solid var(--primary-color);
+}
+
+.open .animated, .open .static{
+    display: none;
+}
+
+.open .closed, .open .animation{
+    display: inline;
+}
