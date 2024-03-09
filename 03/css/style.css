@@ -7,6 +7,10 @@
     --bg-hover: #9674E5;
 }
 
+.secundary{
+    --bg-default: #3C3748;
+}
+
 :root{
     --bg-color: #130F1E;
     --bg-ligth: #fff;
@@ -60,6 +64,7 @@ main{
 button{
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: "Inter", sans-serif;
     border: 0;
     font-size: 14px;
@@ -67,6 +72,7 @@ button{
     padding: 12px 24px;
     border-radius: 24px;
     cursor: pointer;
+    gap: 8px;
 }
 
 button:hover{
@@ -75,6 +81,37 @@ button:hover{
 
 button:focus{
     outline: 2px solid var(--border-focus);
+}
+
+button:disabled{
+    background-color: var(--bg-default);
+    cursor: not-allowed;
+    opacity: .56;
+}
+
+.icon{
+    background-color: transparent;
+    width: 16px;
+}
+
+.moveble{
+    cursor: move;
+}
+
+.loading{
+    cursor:progress;
+}
+
+.loading img{
+    animation: spin 700ms infinite linear;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
 }
 
 

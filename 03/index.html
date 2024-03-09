@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
     <title>Botões e cursores</title>
 </head>
 <body>
@@ -14,9 +15,14 @@
             <p>Interaja com os botões e observe a mudança de aparência e de cursores</p>
         </div>
         <div class="btn-group">
-            <button class="primary">INTERAJA COMIGO</button>
-            <button>INTERAJA COMIGO</button>
-            <button>INTERAJA COMIGO</button>
+            <button class="primary" data-js="btn-enable">
+                INTERAJA COMIGO
+            </button>
+            <button class="secundary" disabled>INTERAJA COMIGO</button>
+            <button class="terciary moveble">
+                <img class="icon" src="assets/list.svg" alt="">
+                INTERAJA COMIGO
+            </button>
         </div>
     </main>
 
