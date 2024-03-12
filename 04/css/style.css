@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --bg-color: #1A1924;
+    --color-box-visit: #633BBC;
+    --color-box-you: #07847E;
+    --color-font-light: #E1E1E6;
+    --color-secundary: #00B37E;
+    font-size: 62.5%
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--bg-color);
+    font-size: 1.6rem;
+    color: var(--color-font-light);
+}
+
+#app{
+    padding: 3.2rem 2.4rem;
+    height: 100vh;
+    width: 100vw;
+    max-width: 88rem;
+    margin: 0 auto;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-infos{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.user-status h1{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.user-status p::before{
+    display: block;
+    content: '';
+    width: .8rem;
+    height: .8rem;
+    background-color: var(--color-secundary);
+    border-radius: 50%;
+}
+
+.user-status p{
+    display: flex;
+    align-items: baseline;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--color-secundary);
+    gap: .4rem;
+    margin-top: .4rem;
+}
+
+.user-infos img{
+    width: 4.8rem;
+    height: 4.8rem;
+    object-fit: cover;
+    border-radius:50%;
+}
+
+.last-seen{
+    font-size: 1.2rem;
+    margin-top: 2.6rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.4rem;
+}
+
+.messages{
+    display: grid;
+    gap: 3rem;
+}
+
+.menssage{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.date-user-send{
+    font-size: 1.2rem;
+}
+
+.menssage-content{
+    background-color: var(--color-box-visit);
+    padding: 1.4rem;
+    border-radius: 0 1rem 1rem 1rem;
+    max-width: 60%;
+    width: fit-content;
+}
+
+.you .menssage-content{
+    background-color: var(--color-box-you);
+    border-radius: 1rem 1rem 0 1rem;
+    margin-left: auto;
+}
+
+.you .date-user-send{
+    text-align: right;
+}

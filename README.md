@@ -15,3 +15,5 @@ Repositório criado para armazenar exercicios feitos nos desafios #boraCodar da 
 ### [desafio 02 - product card](./02/)
 
 ### [desafio 03 - botões e cursores](./03/)
+
+### [desafio 04 - chat](./04/)
