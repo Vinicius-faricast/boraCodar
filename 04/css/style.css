@@ -25,14 +25,17 @@ body{
     background-color: var(--bg-color);
     font-size: 1.6rem;
     color: var(--color-font-light);
+    height: 100vh;
+    overflow: hidden;
 }
 
 #app{
     padding: 3.2rem 2.4rem;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     max-width: 88rem;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .top{
@@ -89,12 +92,19 @@ body{
 .messages{
     display: grid;
     gap: 3rem;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar{
+    display: none;
 }
 
 .menssage{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-bottom: 3rem;
 }
 
 .date-user-send{
@@ -118,3 +128,41 @@ body{
 .you .date-user-send{
     text-align: right;
 }
+
+.input-warpper{
+    display: flex;
+    align-items: center;
+    background-color: #282843;
+    border-radius: 999px;
+    padding: 1.4rem 2.4rem;
+}
+
+.input-warpper input{
+    flex: 1;
+    outline: none;
+}
+
+.input-warpper:focus-within{
+    outline: 2px solid var(--color-font-light);
+}
+
+.input-warpper input::placeholder{
+    color: var(--color-font-light);
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.input-warpper button{
+    color: var(--color-font-light);
+    font-size: 2.4rem;
+}
+
+input, button{
+    background-color: transparent;
+    border: 0;
+}
+
+input{
+    color: var(--color-font-light);
+}
+
