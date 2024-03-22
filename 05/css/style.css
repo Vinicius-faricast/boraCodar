@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
 :root{
     font-size: 62.5%;
     --primary-color: #2D2A37;
@@ -17,6 +19,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--primary-font-color);
+    font-family: "Rubik", sans-serif;
 }
 
 body{
@@ -29,6 +32,9 @@ body{
 }
 
 .calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 35.6rem;
     height: 56.6rem;
     border-radius: 5rem;
@@ -38,20 +44,89 @@ body{
     0px 68px 41px rgba(0, 0, 0, 0.15), 0px 30px 30px rgba(0, 0, 0, 0.26),
     0px 8px 17px rgba(0, 0, 0, 0.29), inset 0px 6px 8px rgba(255, 255, 255, 0.1),
     inset 0px -4px 5px rgba(0, 0, 0, 0.22);
-    padding: 2.6rem;
+    padding: 3.6rem;
 }
 
 .display{
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 1.6rem;
+}
+
+.operation, .result{
+    width: 100%;
+    padding: 0 2.2rem 0 1.8rem;
+    line-height: 140%;
 }
 
 .operation{
-    width: 100%;
     text-align: end;
+    font-size: 2rem;
+    color: var(--terciary-font-color);
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 3.2rem;
+
+}
+
+.result-icons{
+    width: 2rem;
+}
+
+.keyboard{
+    margin-top: 2.6rem;
+    margin-inline:  3.2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+    /* width: 100%; */
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem;
+    font-size: 2.4rem;
+    /* width: 6.4rem;
+    height: 6.4rem; */
+    border-radius: 999px;
+    border-style: none;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04),
+0px 4px 6px rgba(0, 0, 0, 0.1), 0px 2px 4px rgba(0, 0, 0, 0.26),
+0px 0px 2px rgba(0, 0, 0, 0.29), inset 0px 2px 3px rgba(255, 255, 255, 0.06);
+}
+
+.primary{
+    background-color: var(--primary-color);
+}
+
+.secundary{
+    background-color: var(--secundary-btn-color);
+}
+
+.terciary{
+    color: var(--secundary-font-color);
+}
+
+.quartiary{
+    background-color: var(--terciary-btn-color);
+}
+
+button img,button p{
+    width: 2.8rem;
+}
+
+button:active{
+    opacity: .5;
 }
 /* sombra btn
 box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.01), 0px 7px 7px rgba(0, 0, 0, 0.04),
