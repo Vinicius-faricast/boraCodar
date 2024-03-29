@@ -18,4 +18,6 @@ Repositório criado para armazenar exercicios feitos nos desafios #boraCodar da 
 
 ### [desafio 04 - chat](./04/)
 
-### [desafio 04 - calculadora](./05/)
+### [desafio 05 - calculadora](./05/)
+
+### [desafio 06 - ticket](./06/)
