@@ -21,3 +21,5 @@ Repositório criado para armazenar exercicios feitos nos desafios #boraCodar da 
 ### [desafio 05 - calculadora](./05/)
 
 ### [desafio 06 - ticket](./06/)
+
+### [desafio 07 - Site de Carnaval](./07/)
