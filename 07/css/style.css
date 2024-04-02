@@ -24,7 +24,8 @@
 
 body{
     font-size: 1.6rem;
-    width: 100vw;
+    /* width: 100%; */
+    max-width: 100vw;
     height: 100vh;
 }
 
@@ -107,3 +108,134 @@ body{
     color: #6246EA;
 }
 
+.form-search{
+    display: flex;
+    gap: 2.4rem;
+}
+
+.cities-fields, .search-field{
+    display: flex;
+    padding: 1.2rem 1.4rem;
+    background: #F4F4FF;
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.cities, .search{
+    /* appearance: none; */
+    font-size: 1.6rem;
+    color: #7C7C8A;
+    border-style: none;
+    background: #F4F4FF;
+    /* background: url('../assets/Vector.png') no-repeat right center; */
+    /* background-size: 1rem; */
+    padding-inline-end: 5rem;
+    outline: none;
+    
+}
+
+
+.btn-search{
+    background-color: #6246EA;
+    color: white;
+    border-style: none;
+    padding: 1.2rem 3.2rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.container-title{
+    max-width: 80%;
+    padding-top: 10rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+
+
+.title{
+    font-size: 3.2rem;
+    color: #121214;
+    font-weight: 700;
+}
+
+.config-view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .8rem;
+    border: .1rem solid #EAEAEA;
+    border-radius: .5rem;
+}
+
+
+.config-view p{
+    padding: .8rem 1.6rem;
+    align-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #6246EA;
+    text-transform: uppercase;
+}
+
+p.active{
+    color: white;
+    background: #6246EA;
+    border-radius: .5rem;
+}
+
+main{
+    margin: 0 auto;
+    max-width: 80%;
+    padding-bottom: 10rem;
+}
+
+.container-articles{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2rem;
+}
+
+article{
+    /* max-width: 3rem; */
+    border: .1rem solid #EAEAEA;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.img-article{
+    width: 100%;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+
+.text-content h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text-content p{
+    font-size: 1.6rem;
+    color: #000000;
+    opacity: 75%;
+    line-height: 160%;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 1rem;
+}
