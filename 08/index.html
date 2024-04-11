@@ -1,59 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Dashboard</title>
 </head>
+
 <body>
-       <main class="dashboard-status">
-        <article class="card-dashboard-top">
-          <h2>NPS geral</h2>
-          <div class="content-primary">
-            <img src="assets/Group 3.svg" alt="">
-            <p>Excelente!</p>
-          </div>
-          <div class="card-legend">
-            <p>NPS Score</p>
-            <p>75</p>
-          </div>
-        </article>
+  <section class="dashboard-status">
+    <article class="card-dashboard-top">
+      <h2>NPS geral</h2>
+      <div class="content-primary">
+        <img src="assets/Group 3.svg" alt="">
+        <p>Excelente!</p>
+      </div>
+      <div class="card-legend">
+        <p>NPS Score</p>
+        <p>75</p>
+      </div>
+    </article>
 
-        <article class="card-dashboard-top">
-          <h2>Vendas fechadas</h2>
-          <div class="circle">
-          </div>
-          <div class="card-legend">
-            <div class="legend-compost">
-              <p class="description">Esperado</p>
-              <p>100</p>
-            </div>
-            <div class="legend-compost">
-              <p class="description sales">Alcançado</p>
-              <p>70</p>
-            </div>
-          </div>
-        </article>
+    <article class="card-dashboard-top">
+      <h2>Vendas fechadas</h2>
+      <div class="circle">
+      </div>
+      <div class="card-legend">
+        <div class="legend-compost">
+          <p class="description">Esperado</p>
+          <p>100</p>
+        </div>
+        <div class="legend-compost">
+          <p class="description sales">Alcançado</p>
+          <p>70</p>
+        </div>
+      </div>
+    </article>
 
-        <article class="card-dashboard-top">
-          <h2>Meta mensal</h2>
-          <div class="progress">
-            <svg>
-              <circle cx="92" cy="92" r="91"></circle>
-            </svg>
-          </div>
-          <div class="card-legend">
-            <div class="legend-compost">
-              <p class="description">Esperado</p>
-              <p>R$ 70K</p>
+    <article class="card-dashboard-top">
+      <h2>Meta mensal</h2>
+      <div class="progress">
+        <svg>
+          <circle cx="92" cy="92" r="91"></circle>
+        </svg>
+      </div>
+      <div class="card-legend">
+        <div class="legend-compost">
+          <p class="description">Esperado</p>
+          <p>R$ 70K</p>
+        </div>
+        <div class="legend-compost">
+          <p class="description meta">Alcançado</p>
+          <p>R$ 63K</p>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="dashboard-status">
+    <article class="card-dashboard-top">
+      <h2 class="align-left">
+        Vendas por dia da semana
+      </h2>
+      <div class="content-sales">
+
+        <div class="infos-sales-day">
+          <div>
+            <div class="day-info">
+              <img src="assets/Polygon-green.svg" alt="">
+              <p>Dia com mais vendas</p>
             </div>
-            <div class="legend-compost">
-              <p class="description meta">Alcançado</p>
-              <p>R$ 63K</p>
-            </div>
+            <h3 class="day-name">quarta-feira</h3>
           </div>
-        </article>
-       </main>
+
+          <div>
+            <div class="day-info">
+              <img src="assets/Polygon-red.svg" alt="">
+              <p>Dia com menos vendas</p>
+            </div>
+            <h3 class="day-name">domingo</h3>
+          </div>
+        </div>
+      
+        <div class="graphc">
+          <div>
+            <p>dom</p>
+          </div>
+          <div>
+            <p>seg</p>
+          </div>
+          <div>
+            <p>ter</p>
+          </div>
+          <div>
+            <p>qua</p>
+          </div>
+          <div>
+            <p>qui</p>
+          </div>
+          <div>
+            <p>sex</p>
+          </div>
+          <div>
+            <p>sab</p>
+          </div>
+        </div>
+
+      </div>
+    </article>
+  </section>
 </body>
+
 </html>
