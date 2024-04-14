@@ -103,30 +103,47 @@ body{
     background: linear-gradient(to right, #DF9780, #A66DE9);
 }
 
-.progress{
-    border: 1px solid red;
-    position: relative;
-    width: 22.7rem;
-    height: 22.7rem;
-    /* border-radius: 50%; */
-    left: 1rem;
-    top: -1rem;
-}
-
-.progress svg{
+.circle{
+    /* position: relative;
+    width: 200px;
+    height: 200px; */
     /* border: 1px solid red; */
-    width: 25.7rem;
-    height: 25.7rem;
 }
 
-.progress svg circle{
-    fill: none;
+.svg-indicator {
+    width: 100%;
+    height: 100%;
+    stroke-width: 10;
+    stroke: #D9D9D9;
+}
+
+.svg-indicator-track,
+.svg-indicator-indication,
+.svg-indicator-progress {
+ cx: 50px; /*Define a coordenada x do centro do círculo. Se não for especificado, o centro do círculo é definido como (0,0)*/
+ cy: 50px; /*Define a coordenada y do centro do círculo. Se não for especificado, o centro do círculo é definido como (0,0)*/
+ r: 40px; /*Define o raio do círculo. O valor do raio determina o tamanho do círculo*/
+ fill: transparent;
+ stroke-width: 1.5rem;
+}
+
+.svg-indicator-track{
+    opacity: 10%;
+}
+
+/* stroke-dasharray: 256.2;  */
+.svg-indicator-indication{
     stroke: #7367F0;
-    stroke-width: 40;
+    stroke-dasharray: 251.2; /*é definido como o comprimento total*/
+    stroke-dashoffset: 75.36; /* é definido como metade desse valor (125.6), fazendo com que metade do contorno seja preenchida*/
     stroke-linecap: round;
-    transform: translate(20px, 20px);
-    stroke-dashoffset: 100%;
-    stroke-dasharray: 240px; 
+}
+
+.svg-indicator-progress{
+    stroke: #DF9780;
+    stroke-dasharray: 256.2;
+    stroke-dashoffset: 125.6;
+    stroke-linecap: round;
 }
 
 .align-left{
